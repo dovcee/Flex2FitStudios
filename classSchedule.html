@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cassandra Dover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2Fit Studio</title>
+    <link rel="stylesheet" href="navFootStyle.css">
+    <link rel="stylesheet" href="classScheduleStyle.css">
+    <link href="favicon.ico" type="image/x-icon" rel="icon">
+    <script src="calendar.js" defer></script>
+    <script src="calendarEvents.js"></script>
+    <script src="scrollMessage.js"></script>
+</head>
+
+<body onload="scrollingMsg();">
+    <!--Navigation-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Flex<span class="blue">2</span>Fit</a>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="nav-list hide" id="nav-list">
+            <a href="index.html">Home</a>
+            <a href="classSchedule.html">Class Schedule</a>
+            <a href="index.html">About Us</a>
+            <a href="membership.html" class="highlight">Register Now!</a>
+        </div>
+    </nav>
+
+    <!--Page Content-->
+    <div class="content">
+        <div class="deals">
+            <form name="msgForm" class="dealsForm">
+                <input type="text" name="scrollingMsg" class="scrollText" size="100">
+            </form>
+        </div>
+
+        <div id="calendar"></div>
+        
+    </div>
+    <!--Footer-->
+    <div class="container">
+        <footer>
+            <div class="ft-main">
+                <div class="ft-main-items">
+                    <h2 class="ft-title">About</h2>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Membership Plans</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-items">
+                    <h2 class="ft-title">Resources</h2>
+                    <ul>
+                        <li><a href="#">Diet Plan</a></li>
+                        <li><a href="#">Yoga 101</a></li>
+                        <li><a href="#">Calculate BMI</a></li>
+                        <li><a href="#">How to Become a Yogi</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-items">
+                    <h2 class="ft-title">Contact</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Become A Member</a></li>
+                        <li><a href="#">Own a Flex 2 Fit</a></li>
+                        <li><a href="#">Affilate Links</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-items">
+                    <h2 class="ft-title">Stay Updated</h2>
+                    <p>Subscribe to our newsletter to get our latest events.</p>
+                    <form>
+                        <input type="email" name="email" placeholder="Enter a valid email">
+                        <input type="submit" value="Subscribe Now!">
+                    </form>
+                </div>
+            </div>
+            <div class="ft-social">
+                <ul class="ft-social-list">
+                    <li><a href="facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                    <li><a href="pintrest.com"><img src="pintrest.png" alt="Pintrest"></a></li>
+                    <li><a href="youtube.com"><img src="youtube.png" alt="Youtube"></a></li>
+                </ul>
+            </div>
+            <div class="ft-legal">
+                <ul class="ft-legal-list">
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li>Flex 2 Fit Inc.&copy; 2022</li>
+                    <li><a href="#">Privacy Policy </a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="page.js" defer></script>
+
+</body>
+
+
+</html>

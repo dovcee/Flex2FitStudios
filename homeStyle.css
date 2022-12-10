@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Mono+One&display=swap');
+
+
+/******************************Content***************************************/
+/*Hero Slideshow Container*/
+.parallax-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: url(flex.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(63 63 63);
+    gap: 64px;
+    text-align: center;
+}
+.title{
+    background-color: orchid;
+    color: rgb(63 63 63);
+    font-family: 'Rubik Mono One', sans-serif;
+    padding: 50px;
+}
+
+/**********************About Me********************/
+.buffer {
+    
+    min-height: 60vh;
+    background-color: rgb(63 63 63);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buffer .acard {
+    display: flex;
+    max-width: 320px;
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 15px 0px;
+    padding: 16px;
+}
+.buffer h2{
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.buffer .acard p{
+    padding: 16px;
+    line-height: 1.5;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.buffer .acard-img{
+    padding: 16px;
+}
+.buffer .acard-img img {
+   
+    border-radius: 15px;
+    box-shadow: rgb(209, 151, 207) 0px 0px 1px,
+        rgb(209, 151, 207) 0px 0px 5px,
+        rgb(209, 151, 207) 0px 0px 10px,
+        rgb(209, 151, 207) 0px 0px 20px;
+}
+
+/********************Trainer Container**************************/
+.parallax-container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 96px 0;
+    background-image: url(parl.jpg);
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    gap: 26px;
+}
+.card {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+    transition: transform 0.5s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-of-type(1) .card-img {
+    background-image: url(trainer.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+.card:nth-of-type(2) .card-img {
+    background-image: url(trainer2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+.card:nth-of-type(3) .card-img {
+    background-image: url(flexTrainer1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+.card:nth-of-type(4) .card-img {
+    background-image: url(trainer3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.card-img h1 {
+    font-size: 48px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/****************************Slogan***********************/
+.buffer2 {
+    width: 100%;
+    min-height: 60vh;
+    background-color: rgb(63 63 63);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buffer2 h1,
+.buffer2 h3 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #4CD9E0;
+}
+
+.buffer2 h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    color: orchid;
+}
+
+
+
+
+/*********************ALL CARD LIKE CSS***************/
+.info {
+    max-width: 300px;
+    padding: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 16px 18px;
+    border-radius: 3px;
+    background-color: #4CD9E0;
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+.tname:hover {
+    background-color: orchid;
+    letter-spacing: 1.5px;
+}
+
+.tname {
+    margin-top: 16px;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+
+/***********************Membership Plan *****************/
+.parallax-container3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 96px 0;
+    background-image: url(parl2.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    gap: 26px;
+}
+.card2 {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-img2 {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card2:nth-of-type(1) .card-img2 {
+    background-image: url(mid.jpg);
+
+}
+
+.card2:nth-of-type(2) .card-img2 {
+    background-image: url(ultra.jpg);
+}
+
+.card2:nth-of-type(3) .card-img2 {
+    background-image: url(basic.jpg);
+}
+
+
+/*******************Contact Info & Map ****************/
+.buffer3 {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60vh;
+    background-color: #4CD9E0;
+}
+
+/*Map*/
+#map {
+    width: 50%;
+    height: 400px;
+}
+
+.contactCard {
+    display: flex;
+    max-width: 320px;
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+
+/********************************
+
+   
+
+
+***********MEDIA QUREY**************
+    
+
+
+
+*********************************/
+@media only screen and (max-device-width: 1366px) {
+    .parallax-container{
+        background-attachment: scroll;
+    }
+}

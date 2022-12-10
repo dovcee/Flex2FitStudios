@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cassandra Dover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2Fit Studio</title>
+    <link rel="stylesheet" href="navFootStyle.css">
+    <link rel="stylesheet" href="membershipStyle.css">
+    <link href="favicon.ico" type="image/x-icon" rel="icon">
+
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Flex<span class="blue">2</span>Fit</a>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="nav-list hide" id="nav-list">
+            <a href="index.html">Home</a>
+            <a href="classSchedule.html">Class Schedule</a>
+            <a href="index.html">About Us</a>
+            <a href="membership.html" class="highlight">Register Now!</a>
+        </div>
+    </nav>
+
+
+
+    <!--Page Content-->
+    <div class="content">
+        <form name="contactForm" class="contactForm" onsubmit="return validateForm()" action="confirmation.html">
+            <h2 class="form-head">Application Form</h2>
+            <div class="form-body">
+            <div class="row">
+                <label>Full Name</label>
+                <input type="text" name="name">
+                <div class="error" id="nameErr"></div>
+            </div>
+            <div class="row">
+                <label>Email Address</label>
+                <input type="text" name="email">
+                <div class="error" id="emailErr"></div>
+            </div>
+            <div class="row">
+                <label>Phone Number</label>
+                <input type="text" name="mobile" maxlength="10">
+                <div class="error" id="mobileErr"></div>
+            </div>
+            <div class="row">
+                <label>Street Address</label>
+                <input type="text" name="address">
+                <div class="error" id="addressErr"></div>
+            </div>
+            <div class="row">
+                <label>City</label>
+                <input type="text" name="city">
+                <div class="error" id="cityErr"></div>
+            </div>
+            <div class="row">
+                <label>State</label>
+                <input type="text" name="state">
+                <div class="error" id="stateErr"></div>
+            </div>
+            <div class="row">
+                <label>Zip Code</label>
+                <input type="text" name="zipcode">
+                <div class="error" id="zipcodeErr"></div>
+                
+            </div>
+            <div class="row">
+                <label>Gender</label>
+                <div class="form-inline">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label> 
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+                <div class="error" id="genderErr"></div>
+            </div>
+            <div class="row">
+                <label>Fitness Goals <i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="goals[]" value="Get Lean"> Get Lean</label>
+                    <label><input type="checkbox" name="goals[]" value="Build Muscle"> Build Muscle</label>
+                    <label><input type="checkbox" name="goals[]" value="Get Active"> Get Active</label>  
+                </div>
+            </div> 
+            <div class="row">
+                <label>Which plan would you like?</label>
+                <select name="plan">
+                    <option>Select</option>
+                    <option>Flex Basic</option>
+                    <option>Flex Mid</option>
+                    <option>Flex Ultra</option>
+                    <option>Free 3-Day Trial</option>
+                </select> 
+                <div class="error" id="planErr"></div>
+            </div>
+        </div>     
+            <div class="form-footer">
+                <input class="btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <div class="container">
+        <footer>
+            <div class="ft-main">
+                <div class="ft-main-items">
+                    <h2 class="ft-title">About</h2>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Membership Plans</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-items">
+                    <h2 class="ft-title">Resources</h2>
+                    <ul>
+                        <li><a href="#">Diet Plan</a></li>
+                        <li><a href="#">Yoga 101</a></li>
+                        <li><a href="#">Calculate BMI</a></li>
+                        <li><a href="#">How to Become a Yogi</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-items">
+                    <h2 class="ft-title">Contact</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Become A Member</a></li>
+                        <li><a href="#">Own a Flex 2 Fit</a></li>
+                        <li><a href="#">Affilate Links</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-items">
+                    <h2 class="ft-title">Stay Updated</h2>
+                    <p>Subscribe to our newsletter to get our latest events.</p>
+                    <form name="subscription" onsubmit="return validateEmailSub()">
+                        <input type="text" name="email">
+                        <input type="submit" value="Subscribe Now!">
+                    </form>
+                </div>
+              </div>
+            <div class="ft-social">
+                <ul class="ft-social-list">
+                    <li><a href="facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                    <li><a href="pintrest.com"><img src="pintrest.png" alt="Pintrest"></a></li>
+                    <li><a href="youtube.com"><img src="youtube.png" alt="Youtube"></a></li>
+                </ul>
+              </div>
+            <div class="ft-legal">
+                <ul class="ft-legal-list">
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li>Flex 2 Fit Inc.&copy; 2022</li>
+                    <li><a href="#">Privacy Policy </a></li>
+                </ul>
+              </div>
+        </footer>
+    </div>
+    <script src="membership.js" defer></script>
+    <script src="page.js" defer></script>
+</body>
+
+
+</html>

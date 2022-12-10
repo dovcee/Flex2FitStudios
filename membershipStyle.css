@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Mono+One&display=swap');
+
+
+/**********Page Content*****************************/
+.content {
+    height: 100%;
+    background: rgb(9, 0, 152);
+    background: radial-gradient(circle, rgba(9, 0, 152, 1) 21%, rgba(63, 173, 180, 1) 64%, rgba(76, 217, 224, 1) 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.contactForm {
+    flex: 1;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: #EFF0F1;
+    border: 1px solid #999;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-head {
+    padding: 15px 0;
+    overflow: hidden;
+    display: flex;
+    background-color: #4CD9E0;
+    border-bottom: 1px solid #999;
+    border-radius: 10px;
+    color: #666;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Rubik Mono One', sans-serif;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/*Form Content*/
+.form-body {
+    background: white;
+    padding: 8px 10px;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 11px 6px;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CD9E0;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 14px;
+}
+
+label i {
+    color: orchid;
+    font-size: 80%;
+}
+
+form input,
+form select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.form-inline label,
+.form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.error {
+    color: orchid;
+    font-size: 90%;
+}
+
+/* FORM SUMBIT BUTTON AREA**/
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #4CD9E0;
+    font-size: 17px;
+    font-family: 'Rubik Mono One', sans-serif;
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    color: rgb(85, 81, 81);
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: orchid;
+    letter-spacing: 3px;
+    color: white;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .form-inline {
+        border: 1px solid #ccc;
+        padding: 8px 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .btn,
+    .btn-reset {
+        flex: 1;
+    }
+}
+
